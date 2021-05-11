@@ -46,3 +46,7 @@ Important: Make sure to stay within the type restrictions mentioned, as the over
 - sets games won by right (orange) team
 - type: int (range(0, 4))
 - default value: 0
+
+## Questions? Contact me at:
+Discord: Yujuice#1369
+Email: rayalbertz@gmail.com
