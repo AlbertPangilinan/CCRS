@@ -11,7 +11,7 @@
 // Set bracket stage
 // type: string
 // default value: "Quarterfinal 1"
-const bracketStage = "RO32"
+const bracketStage = "Quarterfinal 1"
 
 // Set series length
 // type: int (oneof 3, 5, 7)
@@ -21,14 +21,14 @@ const seriesLength = 5
 // Set current game in series
 // type: int (range(1, 7))
 // default value: 1
-const gameNum = 6
+const gameNum = 1
 
 // Set games won by left (blue) team
 // type: int (range(0, 4))
 // default value: 0
-const teamLeftGamesWon = 3
+const teamLeftGamesWon = 0
 
 // Set games won by right (orange) team
 // type: int (range(0, 4))
 // default value: 0
-const teamRightGamesWon = 3
+const teamRightGamesWon = 0
