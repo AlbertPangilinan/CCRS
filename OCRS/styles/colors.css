@@ -1,0 +1,8 @@
+:root {
+    --default-blue: rgba(4, 32, 132, 1);
+    --default-blue-light: rgba(4, 32, 132, 0.75);
+    --default-orange: rgba(211, 153, 40, 1);
+    --default-orange-light: rgba(211, 153, 40, 0.75);
+    --ocrs-red: rgba(204, 32, 39, 1);
+    --ocrs-red-light: rgba(204, 32, 39, 0.75);
+}

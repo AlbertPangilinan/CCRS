@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta name="author" content="Albert Pangilinan">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="scorebug.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../../scripts/ws_subscribers.js"></script>
+        <script src="../../scripts/constants.js"></script>
+        <script src="../../scripts/colors.js"></script>
+        <script src="scorebug.js"></script>
+    </head>
+    <body>
+        <div class="overlay">
+            <div class="bottom">
+                <div class="scorebug">
+                    <div class="scorebug__team--left">
+                        <span class="team__name">Blue</span>
+                        <span class="team__score">0</span>
+                        <span class="scorebug__team--left--twotone"></span>
+                        <div class="team__games-won">
+                            <span class="team__games-won__container team__games-won__bo3"></span>
+                            <span class="team__games-won__container team__games-won__bo5"></span>
+                            <span class="team__games-won__container team__games-won__bo7"></span>
+                        </div>
+                    </div>
+                    <div class="scorebug__team--right">
+                        <span class="team__name">Orange</span>
+                        <span class="team__score">0</span>
+                        <span class="scorebug__team--right--twotone"></span>
+                        <div class="team__games-won">
+                            <span class="team__games-won__container team__games-won__bo3"></span>
+                            <span class="team__games-won__container team__games-won__bo5"></span>
+                            <span class="team__games-won__container team__games-won__bo7"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timer">
+                    <div class="timer__game-info">
+                        <div class="timer__game-info__series">B<span class="timer__game-info__series--o">o</span><span class="timer__game-info__series--length"></span></div>
+                        <div class="timer__game-info__game">Game <span class="timer__game-info__game--num"></span></div>    
+                    </div>
+                    <span class="timer__time">
+                        0:00
+                    </span>
+                    <div class="timer__bracket-stage"></div>
+                </div>    
+            </div>
+        </div>
+    </body>
+</html>

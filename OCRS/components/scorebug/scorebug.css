@@ -1,0 +1,114 @@
+@import "../../styles/colors.css";
+@import "../../styles/index.css";
+
+.scorebug, .timer {
+    display: flex;
+    font-size: 72px;
+    color: white;
+    box-shadow: 2px 2px 8px 4px rgb(0 0 0 / 25%);
+}
+
+.scorebug__team--left, .scorebug__team--right {
+    display: inline-block;
+    width: 396px;
+    height: 96px;
+    background-color: white;
+}
+
+.scorebug__team--left, .scorebug__team--right, .timer {
+    padding: 16px;
+}
+
+.scorebug__team--left--twotone, .scorebug__team--right--twotone {
+    display: block;
+    width: 428px;
+    height: 128px;
+    margin: -16px;
+}
+
+.scorebug__team--left--twotone {
+    background: linear-gradient(to bottom, var(--default-blue-light) 0%,var(--default-blue-light) 50%,var(--default-blue-light) 50%,var(--default-blue) 50%,var(--default-blue) 100%);
+}
+
+.scorebug__team--right--twotone {
+    background: linear-gradient(to bottom, var(--default-orange-light) 0%,var(--default-orange-light) 50%,var(--default-orange-light) 50%,var(--default-orange) 50%,var(--default-orange) 100%);
+}
+
+.team__name {
+    float: left;
+    padding: 4px 0;
+
+}
+
+.team__score {
+    float: right;
+    padding: 4px 0;
+}
+
+.team__games-won {
+    width: 420px;
+    height: 10px;
+    position: absolute;
+    top: 134px;
+    margin-left: -16px;
+}
+
+.team__games-won__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.team__games-won__game {
+    height: 10px;
+    margin-left: 8px;
+    display: inline-block;
+    background-color: white;
+    transform: skew(-20deg);
+}
+
+.team__games-won__game--bo3 {
+    width: 50%;
+}
+
+.team__games-won__game--bo5 {
+    width: 33%;
+}
+
+.team__games-won__game--bo7 {
+    width: 25%;
+}
+
+.timer {
+    display: inline-block;
+    width: 304px;
+    height: 96px;
+    background-color: black;
+}
+
+.timer__game-info {
+    float: left;
+}
+
+.timer__game-info__series, .timer__game-info__game {
+    font-size: 40px;
+}
+
+.timer__game-info__series--o {
+    font-size: 24px;
+}
+
+.timer__time {
+    float: right;
+    padding: 4px 0;
+}
+
+.timer__bracket-stage {
+    position: absolute;
+    top: 128px;
+    border-radius: 0 0 12px 12px;
+    margin-left: -16px;
+    padding: 4px 16px;
+    background-color: var(--ocrs-red);
+    font-size: 24px;
+    box-shadow: 2px 2px 8px 4px rgb(0 0 0 / 25%);
+}

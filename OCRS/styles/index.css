@@ -1,0 +1,32 @@
+.overlay {
+    display: flex;
+    width: 1920px;
+    height: 1080px;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    /* font-family: 'Open Sans', Arial, Helvetica, sans-serif; */
+    /* font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; */
+}
+
+.top {
+    width: 100%;
+    margin: 64px;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 64px;
+    margin: 0 64px;
+}
+
+.left {
+    position: absolute;
+    top: 256px;
+}
+
+.right {
+    position: absolute;
+    top: 256px;
+    right: 0;
+}
