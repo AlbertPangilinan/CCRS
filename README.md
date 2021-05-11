@@ -22,27 +22,27 @@ Twitch broadcast overlay for Ontario Collegiate Rocket Soccer (OCRS)
 
 Important: Make sure to stay within the type restrictions mentioned, as the overlay may break if these typings are not followed!
 
-### const bracketStage:
+### `const bracketStage`
 - sets current stage of bracket
 - type: string
 - default value: "Quarterfinal 1"
 
-### const seriesLength:
+### `const seriesLength`
 - sets length of series being played
 - type: int (oneof 3, 5, 7)
 - default value: 5
 
-### const gameNum:
+### `const gameNum`
 - sets current game in series
 - type: int (range(1, 7))
 - default value: 1
 
-### const teamLeftGamesWon:
+### `const teamLeftGamesWon`
 - sets games won by left (blue) team
 - type: int (range(0, 4))
 - default value: 0
 
-### const teamRightGamesWon:
+### `const teamRightGamesWon`
 - sets games won by right (orange) team
 - type: int (range(0, 4))
 - default value: 0
