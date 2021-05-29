@@ -96,7 +96,7 @@ $(() => {
         var teamLeftColorStyle = "linear-gradient(to bottom, " + teamLeftColorLight + " 0%, " + teamLeftColorLight + " 50%, " + teamLeftColorLight + " 50%, " + teamLeftColor + " 50%, " + teamLeftColor + " 100%)"
         var teamRightColorStyle = "linear-gradient(to bottom, " + teamRightColorLight + " 0%, " + teamRightColorLight + " 50%, " + teamRightColorLight + " 50%, " + teamRightColor + " 50%, " + teamRightColor + " 100%)"                   
 
-        var time = Math.ceil(d['game']['time']);
+        var time = Math.ceil(d['game']['time_milliseconds']);
         var isOT = d['game']['isOT'];
         var timeStr = getTimeStr(time, isOT);
         if (isOT) {
