@@ -3,9 +3,10 @@ Twitch broadcast overlay for Ontario Collegiate Rocket Soccer (OCRS)
 
 ## Dependencies:
 
-1. BakkesMod (Download: https://www.bakkesmod.com/)
-2. SOS Plugin (Download: https://gitlab.com/bakkesplugins/sos/sos-plugin)
-3. Color Changer Plugin (Download: https://bakkesplugins.com/plugins/view/150)
+1. Node.js (Download: https://nodejs.org/en/) dont install chocolatey or i will cry
+2. BakkesMod (Download: https://www.bakkesmod.com/)
+3. SOS Plugin - tested using v1.6.0 (Download: https://gitlab.com/bakkesplugins/sos/sos-plugin/-/releases)
+4. Color Changer Plugin (Download: https://bakkesplugins.com/plugins/view/150)
 
 ## Getting Started:
 
@@ -13,6 +14,8 @@ Twitch broadcast overlay for Ontario Collegiate Rocket Soccer (OCRS)
 2. Add all `.html` files to OBS as browser sources
 3. Load OCRS colours into BakkesMod
 4. Change variables in `scripts/constants.js` to required variables
+
+Important: Use default install paths and settings for all dependencies, issues may arise in custom installs.  
 
 ## Constants:
 ### To use:
