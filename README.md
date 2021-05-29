@@ -15,7 +15,8 @@ Twitch broadcast overlay for Ontario Collegiate Rocket Soccer (OCRS)
 3. Load OCRS colours into BakkesMod
 4. Change variables in `scripts/constants.js` to required variables
 
-Important: Use default install paths and settings for all dependencies, issues may arise in custom installs.  
+Important: Use default install paths and settings for all dependencies, issues may arise in custom installs.
+Important: When launching OBS it's a good idea to refresh each layer before starting the broadcast just in case.
 
 ## Constants:
 ### To use:
