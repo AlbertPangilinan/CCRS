@@ -1,5 +1,5 @@
-# OCRS
-Twitch broadcast overlay for Ontario Collegiate Rocket Soccer (OCRS)
+# Broadcast overlay for Ontario Collegiate Rocket Soccer (OCRS)
+<img src="https://user-images.githubusercontent.com/55890109/120055665-81347400-c005-11eb-9ecb-0cc7880d6a1b.png" width="200" height="200">
 
 ## Dependencies:
 
@@ -7,6 +7,8 @@ Twitch broadcast overlay for Ontario Collegiate Rocket Soccer (OCRS)
 2. BakkesMod (Download: https://www.bakkesmod.com/)
 3. SOS Plugin - tested using v1.6.0 (Download: https://gitlab.com/bakkesplugins/sos/sos-plugin/-/releases)
 4. Color Changer Plugin (Download: https://bakkesplugins.com/plugins/view/150)
+5. Live streaming software (tested in OBS Studio: https://obsproject.com/)
+6. Rocket League :)
 
 ## Getting Started:
 
