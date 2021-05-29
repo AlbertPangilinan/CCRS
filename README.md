@@ -3,7 +3,7 @@ Twitch broadcast overlay for Ontario Collegiate Rocket Soccer (OCRS)
 
 ## Dependencies:
 
-1. Node.js (Download: https://nodejs.org/en/) dont install chocolatey or i will cry
+1. Node.js (Download: https://nodejs.org/en/)
 2. BakkesMod (Download: https://www.bakkesmod.com/)
 3. SOS Plugin - tested using v1.6.0 (Download: https://gitlab.com/bakkesplugins/sos/sos-plugin/-/releases)
 4. Color Changer Plugin (Download: https://bakkesplugins.com/plugins/view/150)
