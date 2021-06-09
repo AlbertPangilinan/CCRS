@@ -1,13 +1,8 @@
 @import "../../styles/colors.css";
 @import "../../styles/index.css";
 
-.events {
-    float: right;
-}
-
 .event {
     width: fit-content;
-    margin-left: auto;
     margin-bottom: 8px;
     padding: 4px 0;
     transform: skew(-20deg);
