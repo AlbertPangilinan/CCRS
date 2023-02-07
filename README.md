@@ -15,7 +15,7 @@
 
 1. Set up SOS and the web socket connection: https://www.youtube.com/watch?v=QE816DBuwI4
 2. Add all `.html` files to OBS as browser sources (1920 x 1080, keep default custom CSS)
-3. Load OCRS colours into BakkesMod
+3. Load CCRS colours into BakkesMod
 4. Change variables in `scripts/constants.js` to required variables
 
 Important: Use default install paths and settings for all dependencies, issues may arise in custom installs.
