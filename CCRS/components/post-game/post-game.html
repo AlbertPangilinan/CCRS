@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <meta name="author" content="Albert Pangilinan">
+        <link rel="stylesheet" href="post-game.css">
+        <script src="../../scripts/jquery-3.6.4.min.js"></script>
+        <script src="../../scripts/ws_subscribers.js"></script>
+        <!-- <script src="../../constants/series-info.js"></script> -->
+        <!-- <script src="../../constants/default.js"></script> -->
+        <!-- <script src="../../constants/teams.js"></script> -->
+        <script src="post-game.js"></script>
+    </head>
+    <body>
+        <div class="overlay">
+            <div class="post-game">
+                <div class="post-game__container">
+                    <div class="post-game__game-info">
+                        <div class="post-game__game-info__tournament">TOURNAMENT</div>
+                        <div class="post-game__game-info__series">SERIES</div>
+                    </div>
+                    <div class="post-game__score">
+                        <div class="post-game__score__team post-game__score__team--left">
+                            <div class="post-game__score__team__name">Blue</div>
+                            <div class="post-game__score__team__score">0</div>
+                        </div>
+                        <div class="post-game__score__divider">-</div>
+                        <div class="post-game__score__team post-game__score__team--right">
+                            <div class="post-game__score__team__score">0</div>
+                            <div class="post-game__score__team__name">Orange</div>
+                        </div>
+                    </div>
+                    <div class="post-game__series-status"></div>
+                    <table class="post-game__table">
+                        <tr class="post-game__table__player-names">
+                            <th class="post-game__table__player-name post-game__table__player-name--left post-game__table__player-name--left1">Blue 1</th>
+                            <th class="post-game__table__player-name post-game__table__player-name--left post-game__table__player-name--left2">Blue 2</th>
+                            <th class="post-game__table__player-name post-game__table__player-name--left post-game__table__player-name--left3">Blue 3</th>
+                            <th class="post-game__table__player-name post-game__table__player-name--header"></th>
+                            <th class="post-game__table__player-name post-game__table__player-name--right post-game__table__player-name--right1">Orange 1</th>
+                            <th class="post-game__table__player-name post-game__table__player-name--right post-game__table__player-name--right2">Orange 2</th>
+                            <th class="post-game__table__player-name post-game__table__player-name--right post-game__table__player-name--right3">Orange 3</th>
+                        </tr>
+                        <tr class="post-game__table__stats post-game__table__stats--score">
+                            <td class="post-game__table__stat post-game__table__stat--left1 post-game__table__stat--score">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--left2 post-game__table__stat--score">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--left3 post-game__table__stat--score">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--header">
+                                <div class="post-game__table__stat--header__text">Score</div>
+                                <div class="post-game__table__stat--header__percents">
+                                    <div class="post-game__table__stat--header__percents--left"></div>
+                                    <div class="post-game__table__stat--header__percents--right"></div>
+                                </div>
+                            </td>
+                            <td class="post-game__table__stat post-game__table__stat--right1 post-game__table__stat--score">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--right2 post-game__table__stat--score">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--right3 post-game__table__stat--score">0</td>
+                        </tr>
+                        <tr class="post-game__table__stats post-game__table__stats--goals">
+                            <td class="post-game__table__stat post-game__table__stat--left1 post-game__table__stat--goals">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--left2 post-game__table__stat--goals">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--left3 post-game__table__stat--goals">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--header">
+                                <div class="post-game__table__stat--header__text">Goals</div>
+                                <div class="post-game__table__stat--header__percents">
+                                    <div class="post-game__table__stat--header__percents--left"></div>
+                                    <div class="post-game__table__stat--header__percents--right"></div>
+                                </div>
+                            </td>
+                            <td class="post-game__table__stat post-game__table__stat--right1 post-game__table__stat--goals">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--right2 post-game__table__stat--goals">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--right3 post-game__table__stat--goals">0</td>
+                        </tr>
+                        <tr class="post-game__table__stats post-game__table__stats--assists">
+                            <td class="post-game__table__stat post-game__table__stat--left1 post-game__table__stat--assists">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--left2 post-game__table__stat--assists">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--left3 post-game__table__stat--assists">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--header">
+                                <div class="post-game__table__stat--header__text">Assists</div>
+                                <div class="post-game__table__stat--header__percents">
+                                    <div class="post-game__table__stat--header__percents--left"></div>
+                                    <div class="post-game__table__stat--header__percents--right"></div>
+                                </div>
+                            </td>
+                            <td class="post-game__table__stat post-game__table__stat--right1 post-game__table__stat--assists">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--right2 post-game__table__stat--assists">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--right3 post-game__table__stat--assists">0</td>
+                        </tr>
+                        <tr class="post-game__table__stats post-game__table__stats--shots">
+                            <td class="post-game__table__stat post-game__table__stat--left1 post-game__table__stat--shots">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--left2 post-game__table__stat--shots">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--left3 post-game__table__stat--shots">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--header">
+                                <div class="post-game__table__stat--header__text">Shots</div>
+                                <div class="post-game__table__stat--header__percents">
+                                    <div class="post-game__table__stat--header__percents--left"></div>
+                                    <div class="post-game__table__stat--header__percents--right"></div>
+                                </div>
+                            </td>
+                            <td class="post-game__table__stat post-game__table__stat--right1 post-game__table__stat--shots">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--right2 post-game__table__stat--shots">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--right3 post-game__table__stat--shots">0</td>
+                        </tr>
+                        <tr class="post-game__table__stats post-game__table__stats--saves">
+                            <td class="post-game__table__stat post-game__table__stat--left1 post-game__table__stat--saves">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--left2 post-game__table__stat--saves">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--left3 post-game__table__stat--saves">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--header">
+                                <div class="post-game__table__stat--header__text">Saves</div>
+                                <div class="post-game__table__stat--header__percents">
+                                    <div class="post-game__table__stat--header__percents--left"></div>
+                                    <div class="post-game__table__stat--header__percents--right"></div>
+                                </div>
+                            </td>
+                            <td class="post-game__table__stat post-game__table__stat--right1 post-game__table__stat--saves">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--right2 post-game__table__stat--saves">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--right3 post-game__table__stat--saves">0</td>
+                        </tr>
+                        <tr class="post-game__table__stats post-game__table__stats--demos">
+                            <td class="post-game__table__stat post-game__table__stat--left1 post-game__table__stat--demos">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--left2 post-game__table__stat--demos">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--left3 post-game__table__stat--demos">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--header">
+                                <div class="post-game__table__stat--header__text">Demos</div>
+                                <div class="post-game__table__stat--header__percents">
+                                    <div class="post-game__table__stat--header__percents--left"></div>
+                                    <div class="post-game__table__stat--header__percents--right"></div>
+                                </div>
+                            </td>
+                            <td class="post-game__table__stat post-game__table__stat--right1 post-game__table__stat--demos">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--right2 post-game__table__stat--demos">0</td>
+                            <td class="post-game__table__stat post-game__table__stat--right3 post-game__table__stat--demos">0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

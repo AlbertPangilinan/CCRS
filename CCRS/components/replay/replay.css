@@ -1,0 +1,41 @@
+@import "../../styles/colors.css";
+@import "../../styles/index.css";
+
+.replay {
+    display: none;
+    width: 700px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-left: 546px;
+    margin-bottom: -64px;
+    position: relative;
+    bottom: -146px;
+    transition: bottom 0.5s;
+}
+
+.replay__stats--top {
+    width: calc(100% - 64px);
+    background-color: black;
+}
+
+.replay__stats--bottom {
+    width: 100%;
+    background-color: var(--ocrs-red);
+}
+
+.replay__stats {
+    height: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    clip-path: polygon(32px 0, calc(100% - 32px) 0, 100% 100%, 0 100%);
+    box-shadow: 2px 2px 8px 4px rgb(0 0 0 / 25%);
+}
+
+.replay__stat {
+    display: flex;
+    align-items: center;
+}

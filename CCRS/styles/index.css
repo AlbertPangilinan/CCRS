@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../assets/fonts/BebasNeue-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: #04f404; */
+}
+
+.overlay {
+    display: flex;
+    width: 1920px;
+    height: 1080px;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    /* font-family: 'Open Sans', Arial, Helvetica, sans-serif; */
+    /* font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; */
+    opacity: 97.5%;
+}
+
+.top {
+    width: 100%;
+    margin: 64px;
+}
+
+.bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 64px;
+    margin: 0 64px;
+}
+
+.left {
+    position: absolute;
+    top: 430px;
+}
+
+.right {
+    position: absolute;
+    top: 430px;
+    right: 0;
+}

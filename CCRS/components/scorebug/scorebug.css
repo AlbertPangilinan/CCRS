@@ -1,0 +1,121 @@
+@import "../../styles/colors.css";
+@import "../../styles/index.css";
+
+.scorebug {
+    display: none;
+    color: white;
+    text-align: center;
+    margin-left: 0;
+    transition: margin-left 0.5s;
+}
+
+.scorebug__timer, .scorebug__score__team-left, .scorebug__score__team-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scorebug__timer {
+    overflow: hidden;
+    width: 120px;
+    background-color: black;
+    font-size: 56px;
+}
+
+.scorebug__timer--text {
+    background-color: var(--ocrs-red);
+    font-size: 28px;
+    height: 37px;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    position: relative;
+    top: -45px;
+    transition: top 0.5s;
+}
+
+.scorebug__timer__time {
+    position: relative;
+    top: -20px;
+    transition: top 0.5s;
+}
+
+.scorebug__score {
+    width: 200px;
+    /* width: 460px; */
+    display: flex;
+    position: relative;
+    transition: width 0.5s;
+}
+
+.scorebug__score__goal-scored {
+    position: absolute;
+    width: 100%;
+    height: 118px;
+    overflow: hidden;
+}
+
+.scorebug__score__goal-scored__team {
+    width: 100%;
+    height: 100%;
+    background-color: var(--ocrs-red);
+    position: absolute;
+    font-size: 96px;
+    top: -118px;
+    transition: top 0.5s;
+}
+
+.scorebug__score__team--left, .scorebug__score__team--right {
+    width: 50%;
+    padding-top: 8px;
+}
+
+.scorebug__score__team--left {
+    background-color: var(--default-blue);
+}
+
+.scorebug__score__team--right {
+    background-color: var(--default-orange);
+}
+
+.scorebug__score__team__name {
+    font-size: 28px;
+}
+
+.scorebug__score__team__score {
+    font-size: 56px;
+}
+
+.scorebug__score__team__games-won {
+    position: relative;
+    width: 100%;
+    margin-left: 2px;
+}
+
+.scorebug__score__team__games-won__container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: -1;
+    top: 4px;
+    transition: top 0.5s;
+}
+
+.scorebug__score__team__games-won__game {
+    height: 10px;
+    margin-right: 8px;
+    display: inline-block;
+    background-color: white;
+}
+
+.scorebug__score__team__games-won__game--bo3 {
+    width: 45%;
+}
+
+.scorebug__score__team__games-won__game--bo5 {
+    width: 26%;
+}
+
+.scorebug__score__team__games-won__game--bo7 {
+    width: 18%;
+}

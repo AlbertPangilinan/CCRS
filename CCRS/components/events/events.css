@@ -1,0 +1,43 @@
+@import "../../styles/colors.css";
+@import "../../styles/index.css";
+
+.events {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* margin-right: 200px; */
+}
+
+.event {
+    width: fit-content;
+    margin-bottom: 8px;
+    padding: 4px 0 2px;
+    color: white;
+    font-size: 24px;
+    clip-path: polygon(16px 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
+    box-shadow: 2px 2px 8px 4px rgb(0 0 0 / 25%);
+    height: 0;
+    transition: height 0.5s, padding 0.5s;
+}
+
+.event__player1, .event__player2 {
+    background-color: var(--ocrs-red);
+}
+
+.event__type {
+    padding: 4px 12px 4px 12px;
+    background-color: black;
+}
+
+.event__text {
+    display: inline-block;
+}
+
+.event--first {
+    padding: 4px 12px 4px 20px;
+}
+
+.event--last {
+    padding: 4px 20px 4px 12px;
+}

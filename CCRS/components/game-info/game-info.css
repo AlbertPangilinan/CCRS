@@ -1,0 +1,32 @@
+@import "../../styles/colors.css";
+@import "../../styles/index.css";
+
+.game-info {
+    display: none;
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin: -64px auto;
+    position: relative;
+    top: 0;
+    transition: top 0.5s;
+}
+
+.game-info__tournament, .game-info__series {
+    height: 40px;
+    box-shadow: 2px 2px 8px 4px rgb(0 0 0 / 25%);
+    clip-path: polygon(0 0, 100% 0, calc(100% - 32px) 100%, 32px 100%);
+}
+
+.game-info__tournament {
+    width: 100%;
+    background-color: var(--ocrs-red);
+}
+
+.game-info__series {
+    width: calc(100% - 64px);
+    background-color: black;
+}

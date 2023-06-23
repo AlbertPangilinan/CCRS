@@ -1,0 +1,152 @@
+@import "../../styles/colors.css";
+@import "../../styles/index.css";
+
+.overlay {
+    opacity: 100%;
+}
+
+.post-game {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.99);
+    color: white;
+    text-align: center;
+    display: none;
+}
+
+.post-game__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-game__game-info {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+}
+
+.post-game__game-info__tournament, .post-game__game-info__series {
+    height: 40px;
+    opacity: 100%;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 32px) 100%, 32px 100%);
+}
+
+.post-game__game-info__tournament {
+    width: 100%;
+    background-color: var(--ocrs-red);
+}
+
+.post-game__game-info__series {
+    width: calc(100% - 64px);
+    background-color: black;
+}
+
+.post-game__score {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    width: 100%;
+    margin-top: 48px;
+}
+
+.post-game__score__team {
+    display: flex;
+    width: 400px;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.post-game__score__team--left {
+    justify-content: flex-end;
+    background-color: var(--default-blue);
+}
+
+.post-game__score__team--right {
+    justify-content: flex-start;
+    background-color: var(--default-orange);
+}
+
+.post-game__score__team__name, .post-game__score__team__score {
+    display: inline;
+    margin: 0 24px;
+}
+
+.post-game__series-status {
+    height: 40px;
+    margin-bottom: 16px;
+    padding: 0px 48px;
+    font-size: 32px;
+    background-color: var(--ocrs-red);
+    clip-path: polygon(0 0, 100% 0, calc(100% - 32px) 100%, 32px 100%);
+}
+
+.post-game__score__divider {
+    position: absolute;
+    margin: 12px 0;
+}
+
+.post-game__table, .post-game__table__player-name {
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.post-game__table {
+    width: 1800px;
+    border-collapse: collapse;
+}
+
+.post-game__table__player-name {
+    font-size: 48px;
+}
+
+.post-game__table__player-name--left {
+    border-bottom: 4px solid var(--default-blue);
+}
+
+.post-game__table__player-name--right {
+    border-bottom: 4px solid var(--default-orange);
+}
+
+.post-game__table__stats {
+    border-bottom: 4px solid var(--ocrs-red);
+}
+
+.post-game__table__stat {
+    width: 200px;
+    padding-top: 32px;
+}
+
+.post-game__table__stat--header {
+    width: 350px;
+    font-size: 48px;
+}
+
+.post-game__table__stat--header__percents {
+    position: relative;
+    top: 8px;
+    height: 12px;
+    background-color: black;
+}
+
+.post-game__table__stat--header__percents--left, .post-game__table__stat--header__percents--right {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    transition: width 0.5s;
+}
+
+.post-game__table__stat--header__percents--left {
+    left: 0;
+    background-color: var(--default-blue);
+}
+
+.post-game__table__stat--header__percents--right {
+    right: 0;
+    background-color: var(--default-orange);
+}

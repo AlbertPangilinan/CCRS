@@ -1,0 +1,45 @@
+@import "../../styles/colors.css";
+@import "../../styles/index.css";
+
+.current-boost {
+    display: none;
+    position: absolute;
+    bottom: -16px;
+    right: 128px;
+    width: 360px;
+    box-shadow: 2px 2px 8px 4px rgb(0 0 0 / 25%);
+    clip-path: polygon(64px 0, 100% 0, 100% 100%, 0 100%);
+    margin-right: 0;
+    transition: margin-right 0.5s;
+}
+
+.current-boost__boost, .current-boost__logo, .current-boost__boost--fill {
+    height: 110px;
+}
+
+.current-boost__logo {
+    width: 110px;
+}
+
+.current-boost__boost {
+    width: 250px;
+    background-color: black;
+}
+
+.current-boost__boost--fill {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    right: 110px;
+    background-color: var(--ocrs-red);
+    transition: width 0.25s;
+}
+
+.current-boost__boost--text {
+    position: absolute;
+    bottom: 16px;
+    right: 24px;
+    right: 132px;
+    color: white;
+    font-size: 56px;
+}

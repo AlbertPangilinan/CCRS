@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta name="author" content="Albert Pangilinan">
+        <link rel="stylesheet" href="current-player.css">
+        <script src="../../scripts/jquery-3.6.4.min.js"></script>
+        <script src="../../scripts/ws_subscribers.js"></script>
+        <!-- <script src="../../constants/default.js"></script> -->
+        <!-- <script src="../../constants/teams.js"></script> -->
+        <script src="current-player.js"></script>
+    </head>
+    <body>
+        <div class="overlay">
+            <div class="bottom">
+                <div class="current-player">
+                    <div class="current-player__name">
+                        [CCRS] Player
+                    </div>
+                    <div class="current-player__stats">
+                        <div class="current-player__stats__stat">
+                            <img class="current-player__stats__stat__icon" src="../../assets/images/goal.png" alt="Goals" width="48" height="48">
+                            <div class="current-player__stats__stat__text current-player__stats__stat--goals">0</div>
+                        </div>
+                        <div class="current-player__stats__stat">
+                            <img class="current-player__stats__stat__icon" src="../../assets/images/assist.png" alt="Assists" width="48" height="48">
+                            <div class="current-player__stats__stat__text current-player__stats__stat--assists">0</div>
+                        </div>
+                        <div class="current-player__stats__stat">
+                            <img class="current-player__stats__stat__icon" src="../../assets/images/shot.png" alt="Shots" width="48" height="48">
+                            <div class="current-player__stats__stat__text current-player__stats__stat--shots">0</div>
+                        </div>
+                        <div class="current-player__stats__stat">
+                            <img class="current-player__stats__stat__icon" src="../../assets/images/save.png" alt="Saves" width="48" height="48">
+                            <div class="current-player__stats__stat__text current-player__stats__stat--saves">0</div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </body>
+</html>
