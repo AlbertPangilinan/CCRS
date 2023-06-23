@@ -14,7 +14,7 @@
 ## Highly recommended:
 CCRS Overlay Config Editor - GUI for editing overlay information and team data 
 
-## Getting Started:
+## Getting Started (outdated, new instructions WIP):
 
 1. Set up SOS and the web socket connection: https://www.youtube.com/watch?v=QE816DBuwI4
 2. Add all `.html` files to OBS as browser sources (1920 x 1080, keep default custom CSS)
