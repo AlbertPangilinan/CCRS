@@ -2,7 +2,6 @@
 <img src="https://github.com/AlbertPangilinan/CCRS/assets/55890109/021745b2-02e8-4ce1-aded-cc42687d4451.png" width="200" height="200">
 
 ## Dependencies:
-
 1. [Node.js](https://nodejs.org/en/)
 2. [SOS Plugin v1.6.0](https://gitlab.com/bakkesplugins/sos/sos-plugin/-/releases)
 3. [SOS Websocket Relay](https://gitlab.com/bakkesplugins/sos/sos-ws-relay)
@@ -14,7 +13,7 @@
 ## Highly recommended:
 CCRS Overlay Config Editor - GUI for editing overlay information and team data 
 
-## Getting Started (outdated, new instructions WIP):
+## Getting Started (WIP):
 
 1. Set up SOS and the web socket connection: https://www.youtube.com/watch?v=QE816DBuwI4
 2. Add all `.html` files to OBS as browser sources (1920 x 1080, keep default custom CSS)
@@ -24,7 +23,5 @@ CCRS Overlay Config Editor - GUI for editing overlay information and team data
 Important: Use default install paths and settings for all dependencies, issues may arise in custom installs.
 
 ## Questions? Contact me at:
-
-Discord: yujuice
-
-Email: rayalbertz@gmail.com
+- Discord: yujuice
+- Email: rayalbertz@gmail.com

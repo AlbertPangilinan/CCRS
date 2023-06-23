@@ -1,24 +1,3 @@
-// const eventsMap = {
-//     "Goal": "Goal",
-//     "Aerial Goal": "Aer. Goal",
-//     "Win": "Win",
-//     "MVP": "MVP",
-//     "Backwards Goal": "Back. Goal",
-//     "Pool Shot": "Pool Shot",
-//     "Overtime Goal": "OT Goal",
-//     "Hat Trick": "Hat Trick",
-//     "Assist": "Assist",
-//     "Playmaker": "Playmaker",
-//     "Save": "Save",
-//     "Epic Save": "Save",
-//     "Savior": "Savior",
-//     "Shot on Goal": "Shot",
-//     "Center Ball": "Center",
-//     "Clear Ball": "Clear",
-//     "Demolition": "Demo",
-//     "First Touch": "First Touch"
-// }
-
 const eventsMap = {
     "Goal": "Goal",
     "Aerial Goal": "Aer. Goal",
