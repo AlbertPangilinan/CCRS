@@ -1,5 +1,5 @@
 # Twitch broadcast overlay for Canadian Collegiate Rocket Soccer (CCRS)
-# Rebrand in progress!
+# Overlay used by OCRS from mid-2021 to mid-2023
 <img src="https://user-images.githubusercontent.com/55890109/120055665-81347400-c005-11eb-9ecb-0cc7880d6a1b.png" width="200" height="200">
 
 ## Dependencies:
