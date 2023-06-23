@@ -5,10 +5,11 @@
 
 1. [Node.js](https://nodejs.org/en/)
 2. [SOS Plugin v1.6.0](https://gitlab.com/bakkesplugins/sos/sos-plugin/-/releases)
-3. [BakkesMod](https://www.bakkesmod.com/)
-4. [BakkedMod Color Changer Plugin](https://bakkesplugins.com/plugins/view/150)
-5. [OBS Studio](https://obsproject.com/)
-6. Rocket League :)
+3. [SOS Websocket Relay](https://gitlab.com/bakkesplugins/sos/sos-ws-relay)
+4. [BakkesMod](https://www.bakkesmod.com/)
+5. [BakkedMod Color Changer Plugin](https://bakkesplugins.com/plugins/view/150)
+6. [OBS Studio](https://obsproject.com/)
+7. Rocket League :)
 
 ## Highly recommended:
 CCRS Overlay Config Editor - GUI for editing overlay information and team data 
